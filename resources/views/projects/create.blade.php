@@ -15,4 +15,10 @@
     <input type="text" name="description" />
     <br /><br />
     <button type="submit">Save</button>
+    @error('name')
+        <div>{{ $message }}</div>
+    @enderror
+    @error('description')
+        <div>{{ $message }}</div>
+    @enderror
 </form>
